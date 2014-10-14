@@ -4,7 +4,7 @@ A wrapper around [riakpbc](https://github.com/nlf/riakpbc) to make it a bit simp
 **usage:**
 
 ```
-var riakEasy = require('../');
+var riakEasy = require('riak-jelly');
 var riak = riakEasy.createClient({
   host: 'localhost',
   port: "8087"

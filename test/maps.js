@@ -27,7 +27,7 @@ describe('create map with a register', function () {
 
 describe('remove a register in a map', function () {
   it('should remove the register', function (done) {
-    riak.removeRegister('map-test-bucket', 'map_test', 'map-test-key1', ["dude"], function (
+    riak.removeRegisters('map-test-bucket', 'map_test', 'map-test-key1', ["dude"], function (
       err,
       result) {
       if (err) throw err;
