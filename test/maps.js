@@ -9,7 +9,7 @@ var should = require("should");
 
 describe('create map with a register', function () {
   it('should add registers to the key', function (done) {
-    riak.updateRegister('map-test-bucket', 'map_test', 'map-test-key1', {
+    riak.updateRegisters('map-test-bucket', 'map_test', 'map-test-key1', {
       dude: "sweet",
       color: "blue"
     }, function (

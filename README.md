@@ -28,9 +28,12 @@ riak.del(bucket, key, callback);
 ### CRDT data types, a bucket type is required (and must exist before these are called)
 ```
 riak.incrementCounter(bucket, bucketType, key, val, callback);
+riak.decrementCounter(bucket, bucketType, key, val, callback);
 riak.updateSet(bucket, bucketType, key, addItems, removeItems, callback);
-riak.updateRegister(bucket, bucketType, key, object, callback);
-riak.removeRegister(bucket, bucketType, key, registerArr, callback);
+riak.sadd(bucket, bucketType, key, addItems, callback);
+riak.srem(bucket, bucketType, key, removeItems, callback);
+riak.updateRegisters(bucket, bucketType, key, object, callback);
+riak.removeRegisters(bucket, bucketType, key, registerArr, callback);
 ```
 
 ### get a CRDT value
